@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <script>
+        window.onload = function()
+        {
+            document.getElementById('btnplus').addEventListener('click', add, false);
+            document.getElementById('btnMinus').addEventListener('click', minus, false);
+            document.getElementById('btnMultiply').addEventListener('click', multiply, false);
+            document.getElementById('btnDivision').addEventListener('click', divide, false);
+        }
+
+        function add()
+        {
+            var op1 = document.getElementById('op1').value;
+            var op2 = document.getElementById('op2').value;
+            var result = parseInt(op1) + parseInt(op2);
+            document.getElementById('result').innerHTML = result;
+
+        }
+        
+        function minus()
+        {
+            var op1 = document.getElementById('op1').value;
+            var op2 = document.getElementById('op2').value;
+            var result = parseInt(op1) - parseInt(op2);
+            document.getElementById('result').innerHTML = result;
+
+        }
+
+        
+        function multiply()
+        {
+            var op1 = document.getElementById('op1').value;
+            var op2 = document.getElementById('op2').value;
+            var result = parseInt(op1) * parseInt(op2);
+            document.getElementById('result').innerHTML = result;
+
+        }
+
+        function divide()
+        {
+            var op1 = document.getElementById('op1').value;
+            var op2 = document.getElementById('op2').value;
+            var result = parseInt(op1) / parseInt(op2);
+            document.getElementById('result').innerHTML = result;
+
+        }
+    </script>
+</head>
+<body>
+    <label for="op1">Operador1</label>
+    <input type="number" id="op1">
+    <br>
+    <label for="op2">Operador2</label>
+    <input type="number" id="op2"/>
+    <br>
+    <button id="btnplus">+</button>
+    <button id="btnMinus">-</button>
+    <button id="btnMultiply">*</button>
+    <button id="btnDivision">/</button>
+    <div id="result"></div>
+</body>
+</html>

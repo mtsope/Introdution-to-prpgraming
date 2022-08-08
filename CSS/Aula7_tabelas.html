@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabelas</title>
+        <style>
+            table 
+            {
+                border: 2px solid blue;
+            } 
+            tr,th,td{
+                border: 1px solid blue;
+            }
+            th{
+                background-color: lightgray;
+            }
+            .city
+            {
+                background-color: lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Airport</th>
+                <th>Airport Hubs</th>
+            </tr>
+            <tr>
+                <td colspan="2">Antlanta</td>
+                <td>Delta</td>
+            </tr>
+            <tr>
+                <td  class="city" rowspan="2">Chicago</td>
+                <td rowspan="2">O'Mare</td>
+                <td>American</td>
+            </tr>
+            <tr>
+                <td>United</td>
+            </tr>
+            <tr>
+                <td class="city"rowspan="2">Dallas</td>
+                <td>Dalas love</td>
+                <td>Southwest</td>
+            </tr>
+            <tr>
+                <td>DFW</td>
+                <td>American Airlanes</td>
+            </tr>
+            <tr>
+                <td class="city">New york</td>
+                <td>JFK</td>
+                <td>JetBlue</td>
+            </tr>
+        </table>
+    </body>
+</html>
